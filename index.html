@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <h1>tip Calculator</h1>
+    <div class="wrapper">
+      <div class="info__container">
+        <!-- ====== BILL CONTAINTER ====== -->
+        <div class="bill__container">
+          <p>Bill</p>
+          <div class="bill__input__container">
+            <i class="bx bx-dollar"></i>
+            <input class="bill__input" type="text" placeholder="0" />
+          </div>
+        </div>
+
+        <!-- ====== TIP CONTAINER ====== -->
+        <div class="tip__container">
+          <p>Select Tip %</p>
+          <div class="tip__buttons">
+            <button onclick="play()" class="btn5 active">5%</button>
+            <button onclick="play()" class="btn10">10%</button>
+            <button onclick="play()" class="btn15">15%</button>
+            <button onclick="play()" class="btn25">25%</button>
+            <button onclick="play()" class="btn50">50%</button>
+            <input class="costumBtn" type="text" placeholder="Custom" />
+          </div>
+        </div>
+
+        <!-- ====== PEOPLE CONTAINER ====== -->
+        <div class="people__container">
+          <div class="text__people">
+            <p>Number of People</p>
+            <p class="warning">Can't be zero</p>
+          </div>
+          <div class="people__input__container">
+            <i class="bx bxs-user"></i>
+            <input class="people__input" type="text" placeholder="0" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ======= RESULT CONTAINER ====== -->
+      <div class="result__container">
+        <div class="result__divider">
+          <div class="tip__amount">
+            <div class="left__text">
+              <h3>Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+            <h2 class="tip__result">$0.00</h2>
+          </div>
+
+          <div class="total__amount">
+            <div class="left__text">
+              <h3>Total</h3>
+              <p>/ person</p>
+            </div>
+            <h2 class="total__result">$0.00</h2>
+          </div>
+        </div>
+
+        <button onclick="play()" class="reset">RESET</button>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
